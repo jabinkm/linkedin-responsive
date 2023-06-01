@@ -32,3 +32,29 @@ body{
    .footer-custom{
        margin-top: 100px;
    }
+   #prev{
+    position: relative;
+    left: -100px;
+   }
+   #search{
+    display: flex;
+   }
+   #post-job{
+    background: #f1ece5;
+
+   }
+   .last{
+    background-image: url(./images/lastbg.png);
+   }
+   #foot a{
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+
+   }
+   #foot a:hover{
+    text-decoration: underline;
+    color: #0a66c2;
+   }
+   /* #foote li{
+    margin-left: 4px;
+   } */
