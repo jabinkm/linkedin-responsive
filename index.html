@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
     <body>
         <!-- Navbar starts here -->
         <nav class="navbar bg-body-tertiary shadow-lg sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+                    <img src="./images/logo.png" alt="Logo" width="120" height="40"
+                        class="d-inline-block align-text-top">
                 </a>
                 <ul class="navbar justify-content-end navbar-custom">
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#">Discover</a>
+                        <a class="nav-link" href="#"> &nbsp &nbsp &nbsp<i class="fa-regular fa-newspaper"
+                                style="color: #555753;"></i> <br>Articles</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#people">People</a>
+                        <a class="nav-link" href="#carouselExampleControls"> &nbsp &nbsp <i class="fa-solid fa-user-group"
+                                style="color: #555753;"></i> <br>People</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#learning">Learning</a>
+                        <a class="nav-link" href="#learning"> &nbsp &nbsp &nbsp <i class="fa-regular fa-pen-to-square"
+                                style="color: #555753;"></i><br>Learning</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#footer">Jobs</a>
+                        <a class="nav-link" href="#footer"> &nbsp <i class="fa-solid fa-briefcase"
+                                style="color: #555753;"></i><br>Jobs</a>
                     </li>
+                    <div class="vr"></div>
                     <span class="ms-4">Join now</span>
                     <div class=" ms-5 ">
-                        <button type="button" class="btn btn-outline-primary rounded-pill button-custom ">Sign In</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill button-custom ">Sign
+                            In</button>
                     </div>
                 </ul>
-    
+
             </div>
-    
-    
+
+
         </nav>
-    
+
         <!-- content starts here -->
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="display-6" style="color: #8f5849;">Welcome to your <br>professional community. </h1>
+                    <h1 class="display-3" style="color: #8f5849;">Welcome to your <br>professional community. </h1>
                     <div class="form-input mt-4">
+                        <p><b>Email or phone number</b></p>
                         <input class="form-control border-3" id="email" style="width: 70%;" type="text"
-                           autocomplete="off" placeholder="Email or phone number" aria-label="default input example">
-                        <input class="form-control border-3 mt-2" id="password" style="width: 70%;" type="password" placeholder="Password"
-                            aria-label="default input example">
-                        <p class="mt-2">Forgot password?</p>
+                            autocomplete="off" placeholder="Email or phone number" aria-label="default input example">
+                        <br>
+                        <p><b>password</b></p>
+                        <input class="form-control border-3 mt-2" id="password" style="width: 70%;" type="password"
+                            placeholder="Password" aria-label="default input example">
+                        <p class="mt-2 text-primary"><b>Forgot password?</b></p>
                         <div>
                             <button onclick="signInAlert()" style="width: 70%;" type="button"
                                 class="btn btn-primary rounded-pill p-3">Sign
                                 in</button>
                             <p> ___________________________or____________________________</p>
                             <button style="width: 70%;" type="button"
-                                class="btn btn-light rounded-pill p-3 border border-dark">Sign in with Google</button>
+                                class="btn btn-light rounded-pill p-3 border border-dark"><i class="fa-brands fa-google"
+                                    style="color: #204a87;"></i> Sign in with Google</button>
                             <button style="width: 70%;" type="button"
                                 class="btn btn-light mt-3 rounded-pill p-3 border border-dark">New to LinkedIn? Join
                                 now</button>
@@ -171,60 +191,200 @@
                 </div>
             </div>
         </div>
-        <!-- people section starts here -->
-    
-        <div class="container" id="people">
-            <div class="row">
-                <div class="col-md-6 mt-5">
-                    <h4 class="display-5" style="color: #8f5849;">Let the right people know <br> you’re open to work</h4>
-                    <p class="display-5 people-custom">With the Open To Work feature, you can <br> privately tell recruiters
-                        or publicly share <br> with the LinkedIn community that you are looking for new job opportunities.
-                    </p>
+
+        <!-- post our jobs starts here -->
+
+        <div class="container-fluid p-5 " id="post-job">
+            <div class="containe d-flex">
+                <div class="col-md-6 ms-5">
+                    <h4 class="display-6" style="color: #b24020;">Post your job for <br>millions of people to <br>see
+                    </h4>
                 </div>
-                <div class="col-md-6">
-                    <div class="ms-5">
-                        <img style="width: 75%;" src="./images/people-banner.png" alt="" srcset="">
+                <div class="col-md-5 py-4">
+                    <div class="ms-1">
+                        <button type="button"
+                            class="btn-outline-primary text-primary  rounded-pill border-primary mt-5 py-2 px-4 ">Post a
+                            job</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- people section starts here -->
+
+
+        <div id="carouselExampleControls" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <h4 class="display-5" style="color: #8f5849;">Let the right people know <br> you’re open to work
+                        </h4>
+                        <p class="display-5 people-custom">With the Open To Work feature, you can <br> privately tell
+                            recruiters
+                            or publicly share <br> with the LinkedIn community that you are looking for new job
+                            opportunities.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ms-5">
+                            <img class="d-block" style="width: 75%;" src="./images/people-banner.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <h4 class="display-5" style="color: #8f5849;">Conversations today could <br> lead to opportunity tomorrow 
+                        </h4>
+                        <p class="display-5 people-custom">Sending messages to people you know is <br> a great way to strengthen relationships 
+                            <br> as you take the next step in your career.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ms-5">
+                            <img class="d-block" style="width: 75%;" src="./images/people-banner-2.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <h4 class="display-5" style="color: #8f5849;">Stay up to date on your <br> industry
+                        </h4>
+                        <p class="display-5 people-custom">From live videos, to stories, to  <br> newsletters and more, LinkedIn is full of
+                            <br> ways to stay up to date on the latest <br> discussions in your industry.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ms-5">
+                            <img class="d-block" style="width: 75%;" src="./images/people-banner-3.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span id="prev" class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- find people starts here -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-5 me-5">
+                    <img height="50%" src="./images/W1.svg" alt="">
+                    <h3 class="display-5 mt-5">Connect with people <br> who can help</h3>
+                    <button type="button" class="btn btn-light rounded-pill border border-dark mt-3 p-3">Find people you
+                        know</button>
+                </div>
+                <div class="col-md-5 ms-5">
+                    <img height="50%" src="./images/W2.svg" alt="">
+                    <h3 class="display-5 mt-5">Learn the skills you <br> need to succeed</h3>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle border-dark p-4" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose a topic to learn about
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Who is linkedin for starts here -->
+        <div class="container-fluid d-flex">
+            <div class="col-md-5 bg-light text-center p-5">
+                <h4 class="display-5" style="color: #b24020;"><b>Who is linkedIn for?</b></h4>
+                <p class="display-6">Anyone looking to navigate <br> their professional life.<br></p>
+                <div class="d-grid gap-4 col-12 mx-auto">
+                    <button class="btn btn-outline-dark border-black py-3" type="button">Find a coworker or classmate</button>
+                    <button class="btn btn-outline-dark border-black py-3" type="button">Find a new job</button>
+                    <button class="btn btn-outline-dark border-black py-3" type="button">Find a course or training</button>
+                  </div>
+            </div>
+            <div class="md-6 ">
+                <img class="position-relative start-50" src="./images/X3.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- ytube video starts here -->
+
+        <div class="container d-flex">
+            <div class="md-col-5">
+                <iframe width="564" height="378" src="https://www.youtube.com/embed/IlYUUN8rL_Y" title="Gayatri Iyer: In it to chase my dream | #InItTogether" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 text-center my-auto ms-4">
+                <h4 class="display-5" style="color: #b24020;"><b>In it to chase my dream</b></h4>
+                <p class="display-6">Check out Gayatri’s story of  <br> finding a new job on LinkedIn <br></p>
+            </div>
+        </div>
+
         <!-- join our colleagues starts here -->
-    
+
         <div class="container-fluid" id="learning">
             <div class="row">
-                <div class="col-md-12 ms-5">
-                    <p class="display-5 colleagues-custom">Join your colleagues, classmates, and friends on <br> LinkedIn.
+                <div class="col-md-12">
+                    <p class="display-5 ms-5">Join your colleagues, classmates, and friends on <br>
+                        LinkedIn.
                     </p>
-                    <button type="button" class="btn btn-primary rounded-pill button-custom mt-3">Get started</button>
+                    <div class="last container-fluid" style="width: 100vw; height: 122vh;">
+                        <button type="button" class="btn btn-primary rounded-pill button-custom mt-3">Get started</button>
+                    </div>
                 </div>
             </div>
         </div>
-    
+
         <!-- footer starts here -->
-        <footer class="bg-dark text-white pt-5 pb-5 footer-custom" id="footer">
-            <div class="container">
-                <div class="row">
+        <footer class=" text-dark footer-custom" id="footer">
+            <div class="container-fluid bg-light pb-5">
+                <div class="row" id="foot">
                     <div class="col-md-2">
-                        <img src="./images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+                        <img src="./images/logo.png" alt="Logo" width="120" height="40"
+                            class="d-inline-block align-text-top">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="footer-section">
                             <ul>
                                 <li><strong> General</strong></li>
-                                <li>Sign Up</li>
-                                <li>About</li>
-                                <li>Blog</li>
-                                <li>Help center</li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Developers</a></li>
+
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="footer-section">
                             <ul>
                                 <li><strong> Browse LinkedIn</strong></li>
-                                <li>Learning</li>
-                                <li>Jobs</li>
-                                <li>Salary</li>
+                                <li><a href="#">Learning</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Salary</a></li>
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Products</a></li>
                             </ul>
                         </div>
                     </div>
@@ -232,14 +392,88 @@
                         <div class="footer-section">
                             <ul>
                                 <li><strong> Business Solutions</strong></li>
-                                <li>Talent</li>
-                                <li>Marketing</li>
-                                <li>Sales</li>
+                                <li><a href="#">Talent</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Sales</a></li>
+                                <li><a href="#">Learning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-section">
+                            <ul>
+                                <li><strong> Directories</strong></li>
+                                <li><a href="#">Members</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Commpanies</a></li>
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">Learning</a></li>
+                                <li><a href="#">Posts</a></li>
+                                <li><a href="#">Articles</a></li>
+                                <li><a href="#">Schools</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">News letters</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">People Search</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="developer-custom text-center fs-">@ChiragCoding'sSpot</div>
+                
+            </div>
+            <div class="container-fluid fs-6 mt-3" id="foot">
+                    
+                <ul  style="list-style-type: none;" class="d-flex justify-content-evenly">
+                <li> <strong  style="font-size: 14px;"> Linked </strong><i class="fa-brands fa-linkedin" style="color: #000000;"></i></li>
+                <li><a> © 2023 </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="#"> Accessibility </a></li>
+                <li><a href="#"> User Agreement </a></li>
+                <li><a href="#"> Privacy Policy </a></li>
+                <li><a href="#"> Cookie Policy </a></li>
+                <li><a href="#"> Copyright Policy </a></li>
+                <li><a href="#"> Guest Controls </a></li>
+                <li><a href="#"> Community Guidelines </a></li>
+
+                <li>
+                    <div class="btn-group dropup">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-hidden="true" aria-busy="false"> Language <i class="fa-sharp fa-solid fa-angle-up" style="color: #2e3436;"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">العربية (Arabic)</a></li>
+                          <li><a class="dropdown-item" href="#">Čeština (Czech)</a></li>
+                          <li><a class="dropdown-item" href="#">Dansk (Danish)</a></li>
+                          <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+                          <li><a class="dropdown-item" href="#">English (English)</a></li>
+                          <li><a class="dropdown-item" href="#"></a>Español (Spanish)</li>
+                          <li><a class="dropdown-item" href="#">Français (French)</a></li>
+                          <li><a class="dropdown-item" href="#">हिंदी (Hindi)</a></li>
+                          <li><a class="dropdown-item" href="#">Bahasa Indonesia (Indonesian)</a></li>
+                          <li><a class="dropdown-item" href="#">Italiano (Italian)</a></li>
+                          <li><a class="dropdown-item" href="#">日本語 (Japanese)</a></li>
+                          <li><a class="dropdown-item" href="#">한국어 (Korean)</a></li>
+                          <li><a class="dropdown-item" href="#">Bahasa Malaysia (Malay)</a></li>
+                          <li><a class="dropdown-item" href="#">Nederlands (Dutch)</a></li>
+                          <li><a class="dropdown-item" href="#">Polski (Polish)</a></li>
+                          <li><a class="dropdown-item" href="#">Português (Portuguese)</a></li>
+                          <li><a class="dropdown-item" href="#">Română (Romanian)</a></li>
+                          <li><a class="dropdown-item" href="#">Русский (Russian)</a></li>
+                          <li><a class="dropdown-item" href="#">Svenska (Swedish)</a></li>
+                          <li><a class="dropdown-item" href="#">ภาษาไทย (Thai)</a></li>
+                          <li><a class="dropdown-item" href="#">Tagalog (Tagalog)</a></li>
+                          <li><a class="dropdown-item" href="#">Türkçe (Turkish)</a></li>
+                          <li><a class="dropdown-item" href="#">Українська (Ukrainian)</a></li>
+                          <li><a class="dropdown-item" href="#">简体中文 (Chinese (Simplified))</a></li>
+                          <li><a class="dropdown-item" href="#">正體中文 (Chinese (Traditional))</a></li>
+                          <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                      </div>
+                </li>
+
+                <!-- <li><a href="#"> Language <i class="fa-sharp fa-solid fa-angle-up" style="color: #2e3436;"></i></a></li> -->
+                </ul>
+
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -248,18 +482,19 @@
         <script>
             // handling error user enter nothing in input box
             function signInAlert() {
-                let email=document.getElementById("email")
-                let password=document.getElementById("password")
-                if(email.value==="" && password.value===""){
+                let email = document.getElementById("email")
+                let password = document.getElementById("password")
+                if (email.value === "" && password.value === "") {
                     alert("Enter your email to Sign In")
-                }else{
+                } else {
                     alert("Welcome " + email.value)
-                    email.value=""
-                    password.value=""
+                    email.value = ""
+                    password.value = ""
                 }
-    
+
             }
-    
+
         </script>
-</body>
+    </body>
+
 </html>
